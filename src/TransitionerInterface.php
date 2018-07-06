@@ -2,6 +2,8 @@
 
 namespace Dhii\Data;
 
+use Dhii\Data\Exception\CouldNotTransitionExceptionInterface;
+use Dhii\Data\Exception\TransitionerExceptionInterface;
 use Dhii\Util\String\StringableInterface as Stringable;
 
 /**
@@ -20,6 +22,9 @@ interface TransitionerInterface
      * @param int|string|Stringable $transition The transition.
      *
      * @return StateAwareInterface The resulting stateful object.
+     *
+     * @throws TransitionerExceptionInterface If an error occurred while transitioning.
+     * @throws CouldNotTransitionExceptionInterface If failed apply the transition to the subject.
      */
     public function transition(StateAwareInterface $subject, $transition);
 }
