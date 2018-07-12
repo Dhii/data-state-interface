@@ -12,6 +12,13 @@ use Dhii\Factory\FactoryInterface;
 interface StateAwareFactoryInterface extends FactoryInterface
 {
     /**
+     * The factory config key for the state map.
+     *
+     * @since [*next-version*]
+     */
+    const K_STATE = 'state';
+
+    /**
      * {@inheritdoc}
      *
      * @since [*next-version*]
