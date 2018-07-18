@@ -12,11 +12,11 @@ use Dhii\Factory\FactoryInterface;
 interface StateAwareFactoryInterface extends FactoryInterface
 {
     /**
-     * The factory config key for the state map.
+     * The factory config key for the state data map.
      *
      * @since [*next-version*]
      */
-    const K_STATE = 'state';
+    const K_DATA = 'data';
 
     /**
      * {@inheritdoc}
@@ -24,7 +24,7 @@ interface StateAwareFactoryInterface extends FactoryInterface
      * @since [*next-version*]
      *
      * @param array{
-     *     self::K_STATE:array|stdClass|ArrayObject|MapInterface
+     *     self::K_DATA:array|stdClass|ArrayObject|MapInterface
      * }|
      * stdClass|ArrayAccess|ContainerInterface|null $config The factory config, if any.
      *
