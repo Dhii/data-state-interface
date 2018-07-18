@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [[*next-version*]] - YYYY-MM-DD
 ### Changed
-- `StateAwareFactoryInterface` config key constant renamed to `K_DATA`.
+- `StateAwareFactoryInterface::K_STATE` config key constant renamed to `K_DATA`.
 
 ## [0.1-alpha3] - 2018-07-16
 ### Added
