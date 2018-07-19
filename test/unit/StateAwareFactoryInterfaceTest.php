@@ -54,5 +54,11 @@ class StateAwareFactoryInterfaceTest extends TestCase
             $subject,
             'Subject does not implement expected interface.'
         );
+
+        $this->assertInstanceOf(
+            'Dhii\Factory\DataObjectFactoryInterface',
+            $subject,
+            'Test subject does not implement expected interface.'
+        );
     }
 }

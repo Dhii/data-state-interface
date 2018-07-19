@@ -2,22 +2,15 @@
 
 namespace Dhii\Data;
 
-use Dhii\Factory\FactoryInterface;
+use Dhii\Factory\DataObjectFactoryInterface;
 
 /**
  * Something that can create new stateful objects.
  *
  * @since [*next-version*]
  */
-interface StateAwareFactoryInterface extends FactoryInterface
+interface StateAwareFactoryInterface extends DataObjectFactoryInterface
 {
-    /**
-     * The factory config key for the state data map.
-     *
-     * @since [*next-version*]
-     */
-    const K_DATA = 'data';
-
     /**
      * {@inheritdoc}
      *
