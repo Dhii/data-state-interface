@@ -5,8 +5,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [[*next-version*]] - YYYY-MM-DD
+
+## [0.1-alpha5] - 2018-07-19
 ### Changed
-- Removed `StateAwareFactoryInterface::K_STATE` config key constant.
 - `StateAwareFactoryInterface` now extends `DataObjectFactoryInterface`.
 
 ## [0.1-alpha4] - 2018-07-18
